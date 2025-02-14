@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            background: #0f0f0f;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        h1 {
+            color: #00ff00;
+            text-transform: uppercase;
+            font-size: 28px;
+            padding: 20px 0;
+        }
+        .project {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.4);
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto;
+        }
+        .github-link {
+            display: block;
+            margin-top: 10px;
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+        }
+        .github-link:hover {
+            text-decoration: underline;
+        }
+        .description {
+            font-size: 16px;
+            color: #bbb;
+            margin-top: 10px;
+            line-height: 1.5;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>PORTFOLIO</h1>
+    <div class="container">
+        <div class="project">
+            <h2>Web Development Projects</h2>
+            <img src="photo/gallery.PNG" alt="Gallery Website">
+            <p class="description">A web-based image gallery built using native HTML, CSS, and JavaScript. It dynamically fetches image names and directory structures, allowing seamless browsing of images. Additional features include image sharing and download functionality.</p>
+            <a href="http://dhanen.madanikah.my.id" class="github-link" target="_blank">Gallery Website</a>
+        </div>
+        <div class="project">
+            <h2>Reaction Time Game</h2>
+            <img src="photo/reactiongame.jpg" alt="reactiongame">
+            <p class="description">This project aims to design and implement a reaction game using the Blue Pill microcontroller. The game features an interactive experience using LEDs and push buttons as the main interface.</p>
+            <a href="https://github.com/dn3ndra/reaction-time-stm32f103" class="github-link" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h2>Smart Parking System Verilog</h2>
+            <img src="photo/vr1.png" alt="vr">
+            <img src="photo/vr2.png" alt="vr">
+            <img src="photo/vr3.png" alt="vr">
+            <p class="description">The "Smart Car Parking System" addresses urban parking challenges by combining modern technology with digital system design. This system incorporates motion sensors, keypads, servo motors, magnetic sensors, and LED indicators to streamline parking management. Its primary goal is to enhance parking efficiency, reduce time spent searching for slots, and improve security.</p>
+            <a href="https://github.com/dn3ndra/smart-parking-system-verilog" class="github-link" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h2>UKM Kalimantan Website</h2>
+            <img src="photo/kalimantan.PNG" alt="UKM Kalimantan Website">
+            <img src="photo/kalimantan2.PNG" alt="UKM Kalimantan Website">
+            <p class="description">A dynamic website that utilizes a database to store and manage cabinet member bios and photos. It supports content management for easier updates and information display.</p>
+            <a href="http://kalimantan.madanikah.my.id" class="github-link" target="_blank">UKM Kalimantan Website</a>
+        </div>
+        <div class="project">
+            <h2>Home Lab</h2>
+            <img src="/photo/homelab.PNG" alt="Home Lab">
+            <img src="/photo/homelab2.PNG" alt="Home Lab">
+            <p class="description">I use Proxmox to host self-contained services, including Immich for self-hosted Google Photos, Navidrome as a personal music streaming server, and multiple websites like my gallery and the UKM Kalimantan website. These services run in containers and are securely made public using Cloudflared.</p>
+            <a href="https://github.com/yourusername/cloud-projects" class="github-link" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h2>Cloud Computing</h2>
+            <img src="/photo/cc.png" alt="Home Lab">
+            <img src="/photo/ccgrafana.png" alt="Home Lab">
+            <img src="/photo/ccautoscale.png" alt="Home Lab">
+            <p class="description">This project demonstrates the effective use of containerization and orchestration with Kubernetes for deploying microservices-based applications. Using Minikube, we deployed and managed a microservices architecture locally without requiring extensive infrastructure. Docker ensures consistency across environments, while Kubernetes handles scalability and service management. Monitoring tools like Grafana and Prometheus provide real-time performance tracking, enhancing system stability. Security was improved through VPN access with Tailscale, and public accessibility was managed using Cloudflared. Future improvements could include integrating CI/CD pipelines for automated builds, testing, and deployment to streamline development and enhance system reliability.</p>
+            <a href="https://docs.google.com/document/d/1DYUWQxjBEoX9mLDhQgCYcEMNRrk8frYhd1R9WxHmva0/edit?usp=sharing" class="github-link" target="_blank">View Final Report</a>
+        </div>
+    </div>
+</body>
+</html>
