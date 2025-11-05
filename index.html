@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio - Dhanendra Nivadirrokhman</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #0b0b0b;
+        color: #e6e6e6;
+        font-family: 'Inter', sans-serif;
+    }
+
+    header {
+        padding: 60px 0 40px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 42px;
+        font-weight: 600;
+        color: #00ff95;
+        margin-bottom: 10px;
+    }
+    header p {
+        font-size: 18px;
+        color: #cfcfcf;
+        margin: 0;
+    }
+
+    /* Social / Resume Buttons */
+    .top-buttons {
+        margin-top: 25px;
+    }
+    .top-buttons a {
+        margin: 0 10px;
+        padding: 10px 18px;
+        border-radius: 8px;
+        background: #00ff95;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .top-buttons a:hover {
+        background: #0affc7;
+    }
+
+    /* Skills Matrix */
+    .skills {
+        width: 85%;
+        max-width: 1100px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        text-align: center;
+    }
+    .skill-box {
+        background: #151515;
+        padding: 14px;
+        border-radius: 10px;
+        font-size: 14px;
+        border: 1px solid rgba(0,255,149,0.25);
+    }
+
+    /* Project Grid */
+    .grid {
+        width: 90%;
+        max-width: 1300px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 32px;
+        padding-bottom: 60px;
+    }
+
+    .card {
+        background: #151515;
+        border-radius: 14px;
+        padding: 20px;
+        transition: 0.3s;
+        box-shadow: 0 0 12px rgba(0,255,149,0.08);
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 0 25px rgba(0,255,149,0.25);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        color: #00ff95;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #cfcfcf;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Dhanendra Nivadirrokhman</h1>
+    <p>Computer Engineering | Industrial Systems & Applied Technology</p>
+
+    <div class="top-buttons">
+        <a href="https://linkedin.com/in/dhanendra1" target="_blank">LinkedIn</a>
+        <a href="/DhanendraNivadirrokhmanResume2025.pdf" target="_blank">Download Resume</a>
+    </div>
+</header>
+
+
+<!-- Projects -->
+<div class="grid">
+
+    <a class="card">
+        <h2>NOV - Measurement While Drilling (MWD)</h2>
+        <img src="photo/nov.jpg" alt="MWD Tools" />
+        <p>Hands-on work in the Directional Drilling Technology unit supporting MWD tool inspection, calibration, zeroing, and RFD telemetry testing. Built internal utilities for ECD computation and timestamp automation.</p>
+    </a>
+
+    <a class="card">
+        <h2>DAVO - Directional Survey Automation</h2>
+        <img src="photo/davo.png" alt="DAVO" />
+        <p>Python-based report processing tool to annotate timestamps and compute ECD values in directional survey PDFs. Built using Tkinter + PyMuPDF.</p>
+    </a>
+
+    <a class="card" href="https://github.com/dn3ndra/WifiCracker-UI" target="_blank">
+        <h2>WPA2 Pen-Test Toolkit</h2>
+        <img src="photo/wificracker.png" alt="WPA2 Toolkit" />
+        <p>Toolkit for PMKID / 4-Way Handshake capture + automated cracking workflows using Hashcat. Designed for SECULAB wireless security research.</p>
+    </a>
+
+    <a class="card" href="http://dhanen.madanikah.my.id" target="_blank">
+        <h2>Web Gallery</h2>
+        <img src="photo/gallery.PNG" />
+        <p>Dynamic gallery site built with vanilla JS and directory indexing automation.</p>
+    </a>
+
+    <a class="card" href="https://github.com/dn3ndra/reaction-time-stm32f103" target="_blank">
+        <h2>Reaction Time Game (STM32)</h2>
+        <img src="photo/reactiongame.jpg" />
+        <p>Microcontroller-based reflex testing game using STM32 Blue Pill.</p>
+    </a>
+
+    <a class="card" href="https://github.com/dn3ndra/smart-parking-system-verilog" target="_blank">
+        <h2>Smart Parking System (Verilog)</h2>
+        <img src="photo/vr1.png" />
+        <p>Sensor-driven parking management logic implemented in Verilog.</p>
+    </a>
+
+    <a class="card" href="http://kalimantan.madanikah.my.id" target="_blank">
+        <h2>UKM Kalimantan Website</h2>
+        <img src="photo/kalimantan.PNG" />
+        <p>Dynamic profile & content management website for campus organization.</p>
+    </a>
+
+    <a class="card">
+        <h2>Homelab Infrastructure</h2>
+        <img src="photo/homelab.PNG" />
+        <p>Proxmox-based lab hosting self-contained apps exposed securely via Cloudflared tunnels.</p>
+    </a>
+
+    <a class="card">
+        <h2>Cloud Computing Deployment</h2>
+        <img src="photo/cc.png" />
+        <img src="photo/ccautoscale.png" />
+        <p>Kubernetes microservices deployment with autoscaling, monitored via Grafana/Prometheus.</p>
+    </a>
+
+</div>
+
+</body>
+</html>
